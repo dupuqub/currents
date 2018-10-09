@@ -19,7 +19,7 @@ project.stories.portuguese.intro[0] = () =>
       },
       {
         buttonText: `Zlatan`,
-        optionText: `O melhor dos dois mundos.<br><br>Um híbrido que combina o poder do gás e a agilidade do vento.`,
+        optionText: `O equilíbrio.<br><br>Um híbrido que combina o poder do gás e a agilidade do vento.`,
         image: `images/zlatan.png?${Date.now()}`,
       },
       {

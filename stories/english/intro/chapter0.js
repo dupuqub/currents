@@ -19,7 +19,7 @@ project.stories.english.intro[0] = () =>
       },
       {
         buttonText: `Zlatlan`,
-        optionText: `A balanced challenge.<br><br>A hybrid that combines the power of the fuel and the agility of the wind.`,
+        optionText: `The balance.<br><br>A hybrid that combines the power of the fuel and the agility of the wind.`,
         image: `images/zlatan.png?${Date.now()}`,
       },
       {
