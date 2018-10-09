@@ -9,7 +9,7 @@ project.stories.portuguese.intro[0] = () =>
   {
     title: `Bem vindo às Correntes, ${project.states.safe.avatar.name}.`,
     image: `images/chooseBoat.png?${Date.now()}`,
-    text: `Nós estamos sempre precisando de boas pessoas pra proteger esse oceano.<br><br>Escolha um barco e boas viagens, marujo.`,
+    text: `Nós sempre precisamos de boas pessoas protegendo esses oceanos.<br><br>Escolha um barco e boas viagens, marujo.`,
     options:
     [
       {
