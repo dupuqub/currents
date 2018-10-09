@@ -14,12 +14,12 @@ project.stories.english.intro[0] = () =>
     [
       {
         buttonText: `Velkor DEB`,
-        optionText: `The only bi-motor.<br><br>It's fast, the fastest really, but you better have fuel ready.`,
+        optionText: `A powerful bi-motor.<br><br>It's fast, the fastest really, but you better have fuel ready.`,
         image: `images/velkor.png?${Date.now()}`,
       },
       {
         buttonText: `Zlatlan`,
-        optionText: `The best of both worlds.<br><br>A hybrid that combines the power of the fuel and the agility of the wind.`,
+        optionText: `A balanced challenge.<br><br>A hybrid that combines the power of the fuel and the agility of the wind.`,
         image: `images/zlatan.png?${Date.now()}`,
       },
       {

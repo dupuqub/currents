@@ -14,7 +14,7 @@ project.stories.portuguese.intro[0] = () =>
     [
       {
         buttonText: `Velkor DEB`,
-        optionText: `O único bi-motor.<br><br>É rápido, o mais rápido, mas é bom que você tenha gás perto.`,
+        optionText: `Um poderoso bi-motor.<br><br>É rápido, o mais rápido, mas é bom que você tenha gás perto.`,
         image: `images/velkor.png?${Date.now()}`,
       },
       {
