@@ -9,7 +9,7 @@ project.stories.english.intro[0] = () =>
   {
     title: `Welcome to the Currents, ${project.states.safe.avatar.name}.`,
     image: `images/chooseBoat.png?${Date.now()}`,
-    text: `We are always in need of a good people protecting these oceans.<br><br>Choose a boat and safe travels, sailor.`,
+    text: `We are always in need of good people protecting these oceans.<br><br>Choose a boat and safe travels, sailor.`,
     options:
     [
       {
