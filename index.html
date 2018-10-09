@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+
+  <!--...............................................................................................................-->
+
+  <head>
+
+    <!--
+      "title" is changed through Javascript.
+      Check the folder "langs".
+      Each lang should have a "title" key.
+      It's default address is "project.langs.english.title".
+    -->
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Styles. -->
+    <link rel="stylesheet" href="dunp/index.css">
+    <link rel="stylesheet" href="css/dunp.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/index.css">
+
+  </head>
+
+  <!--...............................................................................................................-->
+
+  <body class="center">
+
+    <!--.............................................................................................................-->
+    <!-- Where the project is rendered. -->
+
+    <div id="stage"></div>
+
+    <!--.............................................................................................................-->
+    <!-- Libraries. -->
+
+    <script src="dunp/index.js"></script>
+
+    <!--.............................................................................................................-->
+    <!-- Project files. -->
+
+    <!-- Always first. -->
+    <script src="core/base.js"></script>
+
+    <!-- Langs. -->
+    <script src="langs/english.js"></script>
+    <script src="langs/portuguese.js"></script>
+
+    <!-- States. -->
+    <script src="states/temp.js"></script>
+    <script src="states/safe.js"></script>
+
+    <!-- Scripts -->
+    <script src="scripts/changeStory.js"></script>
+    <script src="scripts/loadGame.js"></script>
+    <script src="scripts/saveGame.js"></script>
+    <script src="scripts/newGame.js"></script>
+
+    <!-- Stories -->
+    <script src="stories/english/intro/chapter0.js"></script>
+    <script src="stories/portuguese/intro/chapter0.js"></script>
+
+    <!-- Bricks -->
+    <script src="bricks/lang.js"></script>
+    <script src="bricks/footer.js"></script>
+
+    <script src="bricks/scenes/main/brick.js"></script>
+    <script src="bricks/scenes/main/meta.js"></script>
+    <script src="bricks/scenes/main/children/play.js"></script>
+    <script src="bricks/scenes/main/children/title.js"></script>
+
+    <script src="bricks/scenes/files/brick.js"></script>
+    <script src="bricks/scenes/files/meta.js"></script>
+    <script src="bricks/scenes/files/children/button.js"></script>
+    <script src="bricks/scenes/files/children/title.js"></script>
+    <script src="bricks/scenes/files/children/input.js"></script>
+
+    <script src="bricks/scenes/story/brick.js"></script>
+    <script src="bricks/scenes/story/meta.js"></script>
+    <script src="bricks/scenes/story/children/blockCenter.js"></script>
+    <script src="bricks/scenes/story/children/blockLeft.js"></script>
+    <script src="bricks/scenes/story/children/blockRight.js"></script>
+    <script src="bricks/scenes/story/children/optionButton.js"></script>
+    <script src="bricks/scenes/story/children/optionImage.js"></script>
+    <script src="bricks/scenes/story/children/optionText.js"></script>
+    <script src="bricks/scenes/story/children/title.js"></script>
+
+    <!-- Always last. -->
+    <script src="core/index.js"></script>
+
+    <!--.............................................................................................................-->
+
+  </body>
+
+  <!--...............................................................................................................-->
+
+</html>
+

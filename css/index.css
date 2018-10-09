@@ -1,0 +1,24 @@
+
+/*....................................................................................................................*/
+
+html{font-family: sans-serif}
+
+.mainButton{color: #CCC; background: #666}
+.mainButton:hover{color: #DDD; background: #777}
+
+.filesConfirm{background: #400}
+.filesConfirm:hover{background: #600}
+
+.storyOptionButton
+{
+  width: 95%;
+  background: #666;
+  border-radius: calc(var(--u) * 30);
+}
+.storyOptionButton:hover
+{
+  width: 101%;
+  margin-left: 6%;
+  background: #222;
+  border-radius: calc(var(--u) * 30) 0 0 calc(var(--u) * 30);
+}
