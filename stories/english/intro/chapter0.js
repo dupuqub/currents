@@ -18,9 +18,9 @@ project.stories.english.intro[0] = () =>
         image: `images/velkor.png?${Date.now()}`,
       },
       {
-        buttonText: `Zlatlan`,
+        buttonText: `Slatlan`,
         optionText: `The balance.<br><br>A hybrid that combines the power of the fuel and the agility of the wind.`,
-        image: `images/zlatan.png?${Date.now()}`,
+        image: `images/slatan.png?${Date.now()}`,
       },
       {
         buttonText: `Bu Mei`,

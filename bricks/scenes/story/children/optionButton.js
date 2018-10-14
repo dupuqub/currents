@@ -7,15 +7,13 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
 {
   const mouseOver = () =>
   {
-    const lang = dunp.getLang().id
+    const {get, getLang} = dunp
+    const lang = getLang().id
     const index = event.target.id.slice(-1)
     const option = project.stories[lang].intro[0]().options[index]
 
-    if(!option.requires)
-    {
-      dunp.get(`#optionImageRight`).style.backgroundImage = `url('${option.image}')`
-      dunp.get(`#optionTextRight`).innerHTML = option.optionText
-    }
+    get(`#optionImageRight`).style.backgroundImage = `url('${option.image}')`
+    get(`#optionTextRight`).innerHTML = option.optionText
   }
 
   const mouseOut= () =>
@@ -24,6 +22,11 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
 
     dunp.get(`#optionImageRight`).style.backgroundImage = ``
     dunp.get(`#optionTextRight`).innerHTML = ``
+  }
+
+  const click = () =>
+  {
+    //
   }
 
   const brick =

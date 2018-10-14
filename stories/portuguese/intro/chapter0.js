@@ -18,9 +18,9 @@ project.stories.portuguese.intro[0] = () =>
         image: `images/velkor.png?${Date.now()}`,
       },
       {
-        buttonText: `Zlatan`,
+        buttonText: `Slatan`,
         optionText: `O equilíbrio.<br><br>Um híbrido que combina o poder do gás e a agilidade do vento.`,
-        image: `images/zlatan.png?${Date.now()}`,
+        image: `images/slatan.png?${Date.now()}`,
       },
       {
         buttonText: `Bu Mei`,

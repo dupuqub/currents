@@ -14,7 +14,7 @@ project.stories.model = () =>
     [
       // Option A.
       {
-        requires: [() => true, () => true],
+        needs: [() => true, () => true],
         buttonText: null,
         optionText: null,
         image: null,
@@ -22,7 +22,7 @@ project.stories.model = () =>
 
       // Option B.
       {
-        requires: [() => true],
+        needs: () => true,
         buttonText: null,
         optionText: null,
         image: null,
