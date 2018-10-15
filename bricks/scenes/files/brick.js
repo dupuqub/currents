@@ -8,7 +8,7 @@ project.bricks.scenes.files.brick = () =>
   const lang = dunp.getLang()
   const brick =
   {
-    classes: [`center`, `column`],
+    classes: [`center`, `column`, `fastFadeIn`],
     styles:
     [
       [`width`, `100%`],

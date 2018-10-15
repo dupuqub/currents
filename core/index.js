@@ -12,10 +12,10 @@ project.begin = () =>
   dunp.get(`title`).innerHTML = dunp.getLang().title
   dunp.changeScene(`main`, true, true)
 
-  // temporary
-  // project.states.safe.lang = `portuguese`
+  // TEMPORARY /////////////////////////////////////////////////////////////////////////////////////////////////////////
   // project.states.safe.avatar = {name: `bob`}
   // project.scripts.changeStory(`intro`, 0)
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
 //......................................................................................................................

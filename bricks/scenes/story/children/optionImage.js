@@ -5,6 +5,7 @@
 
 project.bricks.scenes.story.children.optionImage = (block, image) =>
 ({
+  classes: [`slowFadeIn`],
   styles:
   [
     [`width`, `96%`],
@@ -19,9 +20,9 @@ project.bricks.scenes.story.children.optionImage = (block, image) =>
     [
       [`width`, `100%`],
       [`height`, `100%`],
-      [`border`, `calc(var(--u) * 15) solid #222`],
       [`box-sizing`, `border-box`],
       [`border-radius`, `calc(var(--u) * 30)`],
+      [`border`, `calc(var(--u) * 15) solid #222`],
       [`background-image`, image ? `url(${image})` : ``],
       [`background-size`, `cover`],
     ],

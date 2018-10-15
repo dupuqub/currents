@@ -23,7 +23,7 @@ project.bricks.scenes.story.children.blockCenter = story =>
   const brick =
   {
     id: `blockCenter`,
-    classes: [`center`, `column`],
+    classes: [`center`, `column`, `delaySlowFadeIn`],
     styles:
     [
       [`width`, `calc(100% / 3)`],

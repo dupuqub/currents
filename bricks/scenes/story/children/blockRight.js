@@ -6,7 +6,7 @@
 project.bricks.scenes.story.children.blockRight = story =>
 ({
   id: `blockRight`,
-  classes: [`center`, `column`],
+  classes: [`center`, `column`, `delaySlowFadeIn`],
   styles:
   [
     [`width`, `calc(100% / 3)`],

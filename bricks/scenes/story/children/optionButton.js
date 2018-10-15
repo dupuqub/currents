@@ -5,6 +5,8 @@
 
 project.bricks.scenes.story.children.optionButton = (option, index) =>
 {
+  //....................................................................................................................
+
   const mouseOver = () =>
   {
     const {get, getLang} = dunp
@@ -13,17 +15,33 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
     const {id, chapterIndex} = project.states.safe.story
     const option = project.stories[lang][id][chapterIndex]().options[index]
 
-    get(`#optionImageRight`).style.backgroundImage = `url('${option.image}')`
-    get(`#optionTextRight`).innerHTML = option.optionText
+    get(`#optionImageRight`).classList.remove(`fastFadeIn`)
+    get(`#optionTextRight`).classList.remove(`fastFadeIn`)
+
+    const delayed = () =>
+    {
+      get(`#optionImageRight`).classList.add(`fastFadeIn`)
+      get(`#optionTextRight`).classList.add(`fastFadeIn`)
+
+      get(`#optionImageRight`).style.backgroundImage = `url('${option.image}')`
+      get(`#optionTextRight`).innerHTML = option.optionText
+    }
+
+    setTimeout(delayed, 0)
   }
+
+  //....................................................................................................................
 
   const mouseOut= () =>
   {
+    const {get} = dunp
     const index = event.target.id.slice(-1)
 
-    dunp.get(`#optionImageRight`).style.backgroundImage = ``
-    dunp.get(`#optionTextRight`).innerHTML = ``
+    get(`#optionImageRight`).style.backgroundImage = ``
+    get(`#optionTextRight`).innerHTML = ``
   }
+
+  //....................................................................................................................
 
   const click = () =>
   {
@@ -37,10 +55,12 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
     option.funktion()
   }
 
+  //....................................................................................................................
+
   const brick =
   {
     id: `optionButton${index}`,
-    classes: [`center`, `pointer`, `storyOptionButton`],
+    classes: [`center`, `pointer`, `storyOptionButton`, `delaySlowFadeIn`],
     extras:
     [
       [`onmouseover`, dunp.trigger(mouseOver)],

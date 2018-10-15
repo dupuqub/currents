@@ -6,7 +6,7 @@
 project.bricks.scenes.story.children.title = story =>
 ({
   id: `storyTitle`,
-  classes: [`center`],
+  classes: [`center`, `slowFadeIn`],
   styles:
   [
     [`width`, `100%`],

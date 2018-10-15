@@ -22,3 +22,19 @@ html{font-family: sans-serif}
   background: #222;
   border-radius: calc(var(--u) * 30) 0 0 calc(var(--u) * 30);
 }
+
+.delaySlowFadeIn{animation: delayFadeIn 3s ease}
+.slowFadeIn{animation: fadeIn 2s ease}
+.fastFadeIn{animation: fadeIn 1s ease}
+
+@keyframes fadeIn
+{
+  from{opacity: 0}
+  to{opacity: 100%}
+}
+@keyframes delayFadeIn
+{
+  0%{opacity: 0}
+  33%{opacity: 0}
+  100%{opacity: 100%}
+}

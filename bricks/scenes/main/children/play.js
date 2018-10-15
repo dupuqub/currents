@@ -6,7 +6,7 @@
 project.bricks.scenes.main.children.play = (inner, funktion) =>
 ({
   id: `mainPlay`,
-  classes: [`center`, `pointer`, `mainButton`],
+  classes: [`center`, `pointer`, `mainButton`, `delaySlowFadeIn`],
   extras: [[`onclick`, funktion]],
   styles:
   [

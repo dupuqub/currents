@@ -6,7 +6,7 @@
 project.bricks.scenes.story.children.blockLeft = story =>
 ({
   id: `blockLeft`,
-  classes: [`center`, `column`],
+  classes: [`center`, `column`, `delaySlowFadeIn`],
   styles:
   [
     [`width`, `calc(100% / 3)`],

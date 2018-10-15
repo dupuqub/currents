@@ -10,6 +10,7 @@ project.bricks.scenes.story.brick = () =>
   const story = project.stories[lang][id][chapterIndex]()
   const brick =
   {
+    classes: [`fastFadeIn`],
     styles:
     [
       [`width`, `100%`],

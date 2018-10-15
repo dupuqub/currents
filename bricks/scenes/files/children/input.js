@@ -42,6 +42,7 @@ project.bricks.scenes.files.children.input = index =>
     {
       id: `filesInput${index}`,
       tag: `input`,
+      classes: [`fastFadeIn`],
       extras:
       [
         [`type`, `text`],
@@ -67,7 +68,7 @@ project.bricks.scenes.files.children.input = index =>
     // Button.
     {
       id: `filesConfirm${index}`,
-      classes: [`center`, `filesConfirm`],
+      classes: [`center`, `filesConfirm`, `fastFadeIn`],
       extras: [[`onmousedown`, dunp.trigger(click)]],
       styles:
       [

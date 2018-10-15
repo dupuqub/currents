@@ -6,7 +6,7 @@
 project.bricks.scenes.main.children.title = inner =>
 ({
   id: `mainTitle`,
-  classes: [`center`],
+  classes: [`center`, `slowFadeIn`],
   styles:
   [
     [`color`, `#BBB`],

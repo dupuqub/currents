@@ -6,7 +6,7 @@
 project.bricks.footer = () =>
 ({
   id: `footer`,
-  classes:[`center`],
+  classes: [`center`, `slowFadeIn`],
   styles:
   [
     [`width`, `100%`],

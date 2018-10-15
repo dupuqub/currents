@@ -5,8 +5,7 @@
 
 project.bricks.scenes.story.children.optionText = (block, text) =>
 ({
-  id: `optionText${block}`,
-  classes: [`center`],
+  classes: [`center`, `slowFadeIn`],
   styles:
   [
     [`width`, `96%`],
@@ -18,6 +17,11 @@ project.bricks.scenes.story.children.optionText = (block, text) =>
     [`font-size`, `calc(var(--u) * 40)`],
     [`border-radius`, `0 0 calc(var(--u) * 20) calc(var(--u) * 20)`],
   ],
-  inner: text
+  inner:
+  {
+    id: `optionText${block}`,
+    classes: [`fastFadeIn`],
+    inner: text,
+  },
 })
 
