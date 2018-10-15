@@ -18,6 +18,7 @@ project.stories.model = () =>
         buttonText: null,
         optionText: null,
         image: null,
+        funktion: () => {},
       },
 
       // Option B.
@@ -26,6 +27,7 @@ project.stories.model = () =>
         buttonText: null,
         optionText: null,
         image: null,
+        funktion: () => {},
       },
 
       // etc...

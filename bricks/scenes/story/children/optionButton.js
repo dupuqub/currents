@@ -26,7 +26,14 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
 
   const click = () =>
   {
-    //
+    const index = event.target.id.slice(-1)
+    const story = project.states.safe.story
+    const {id, chapterIndex} = story
+    const lang = dunp.getLang().id
+    const chapter = project.stories[lang][id][chapterIndex]()
+    const option = chapter.options[index]
+
+    option.funktion()
   }
 
   const brick =
@@ -37,6 +44,7 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
     [
       [`onmouseover`, dunp.trigger(mouseOver)],
       [`onmouseout`, dunp.trigger(mouseOut)],
+      [`onclick`, dunp.trigger(click)],
     ],
     styles:
     [

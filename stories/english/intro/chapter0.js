@@ -13,19 +13,31 @@ project.stories.english.intro[0] = () =>
     options:
     [
       {
-        buttonText: `Velkor DEB`,
-        optionText: `A powerful bi-motor.<br><br>It's fast, the fastest really, but you better have fuel ready.`,
+        buttonText: `Velkor D.E.B.`,
+        optionText: `Move in every angle and also very fast.<br><br>Won't move with no fuel, so you better collect energy from algae.<br><br>No doldrums may stop you.`,
         image: `images/velkor.png?${Date.now()}`,
+        funktion: () =>
+        {
+          console.log(`velkor`)
+        },
       },
       {
         buttonText: `Slatlan`,
-        optionText: `The balance.<br><br>A hybrid that combines the power of the fuel and the agility of the wind.`,
+        optionText: `Move swiftly in every angle, but at half-speed if at "no-go" or without fuel (of course no speed if both).<br><br>Doldrums might get very annoying.`,
         image: `images/slatan.png?${Date.now()}`,
+        funktion: () =>
+        {
+          console.log(`slatan`)
+        },
       },
       {
         buttonText: `Bu Mei`,
-        optionText: `Swift as a fox.<br><br>No engines, just two sails that are cunning as their captain.`,
+        optionText: `"No-go" makes you dependent on currents to turn.<br><br>Uses no fuel and goes very fast with the wind.<br><br>Doldrums are deadly.`,
         image: `images/bumei.png?${Date.now()}`,
+        funktion: () =>
+        {
+          console.log(`bu mei`)
+        },
       },
     ],
   }

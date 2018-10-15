@@ -3,9 +3,9 @@
 
 //......................................................................................................................
 
-project.scripts.changeStory = (id, chapter) =>
+project.scripts.changeStory = (id, chapterIndex) =>
 {
-  project.states.safe.story = {id, chapter}
+  project.states.safe.story = {id, chapterIndex}
 
   dunp.changeScene(`story`, true, true)
 }

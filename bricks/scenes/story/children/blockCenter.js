@@ -7,12 +7,12 @@ project.bricks.scenes.story.children.blockCenter = story =>
 {
   const needsWereMet = option =>
   {
-    const {typeOf, combo, play, array} = dunp
+    const {typeOf, combo, run, array} = dunp
     const {valid} = array
     const needs =
 
         valid(option.needs)
-      ? option.needs.map(play).reduce(combo)
+      ? option.needs.map(run).reduce(combo)
       : typeOf(option.needs) === `function`
       ? option.needs()
       : true

@@ -6,8 +6,8 @@
 project.bricks.scenes.story.brick = () =>
 {
   const lang = dunp.getLang().id
-  const {id, chapter} = project.states.safe.story
-  const story = project.stories[lang][id][chapter]()
+  const {id, chapterIndex} = project.states.safe.story
+  const story = project.stories[lang][id][chapterIndex]()
   const brick =
   {
     styles:

@@ -9,23 +9,35 @@ project.stories.portuguese.intro[0] = () =>
   {
     title: `Bem vindo às Correntes, ${project.states.safe.avatar.name}.`,
     image: `images/chooseBoat.png?${Date.now()}`,
-    text: `Nós sempre precisamos de boas pessoas protegendo esses oceanos.<br><br>Escolha um barco e boas viagens, marujo.`,
+    text: `Nós estamos sempre precisando de pessoas boas protegendo esses oceanos.<br><br>Escolha um barco e boas viagens, marujo.`,
     options:
     [
       {
-        buttonText: `Velkor DEB`,
-        optionText: `Um poderoso bi-motor.<br><br>É rápido, o mais rápido, mas é bom que você tenha gás perto.`,
+        buttonText: `Velkor D.E.B.`,
+        optionText: `Move-se em todos os sentidos e bem rápido.<br><br>Não se moverá sem combustível, então é melhor coletar energia das algas.<br><br>Calmarias não te pararão.`,
         image: `images/velkor.png?${Date.now()}`,
+        funktion: () =>
+        {
+          console.log(`velkor`)
+        },
       },
       {
-        buttonText: `Slatan`,
-        optionText: `O equilíbrio.<br><br>Um híbrido que combina o poder do gás e a agilidade do vento.`,
+        buttonText: `Slatlan`,
+        optionText: `Move-se agilmente em qualquer sentido, mas com metade da velocidade se "contra-vento" ou sem gás, obviamente fica parado sem os dois.<br><br>Calmarias serão uma perturbação.`,
         image: `images/slatan.png?${Date.now()}`,
+        funktion: () =>
+        {
+          console.log(`slatan`)
+        },
       },
       {
         buttonText: `Bu Mei`,
-        optionText: `Rápido como uma raposa.<br><br>Sem motores, só duas velas tão espertas quanto seu capitão.`,
+        optionText: `"Contra-vento" deixa-o dependente de correntes para girar.<br><br>Não usa gás e vai bem rápido com o vento.<br><br>Calmarias são mortais.`,
         image: `images/bumei.png?${Date.now()}`,
+        funktion: () =>
+        {
+          console.log(`bu mei`)
+        },
       },
     ],
   }
