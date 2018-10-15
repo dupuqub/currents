@@ -20,7 +20,6 @@ project.bricks.scenes.story.children.optionText = (block, text) =>
   inner:
   {
     id: `optionText${block}`,
-    classes: [`fastFadeIn`],
     inner: text,
   },
 })

@@ -17,8 +17,8 @@ html{font-family: sans-serif}
 }
 .storyOptionButton:hover
 {
-  width: 101%;
-  margin-left: 6%;
+  width: 100%;
+  margin-left: 4%;
   background: #222;
   border-radius: calc(var(--u) * 30) 0 0 calc(var(--u) * 30);
 }
