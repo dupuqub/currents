@@ -19,6 +19,7 @@ project.stories.english.intro[0] = () =>
         funktion: () =>
         {
           console.log(`velkor`)
+          project.scripts.changeStory(`intro`, 1)
         },
       },
       {
@@ -28,6 +29,7 @@ project.stories.english.intro[0] = () =>
         funktion: () =>
         {
           console.log(`slatan`)
+          project.scripts.changeStory(`intro`, 1)
         },
       },
       {
@@ -36,7 +38,8 @@ project.stories.english.intro[0] = () =>
         image: `images/bumei.png?${Date.now()}`,
         funktion: () =>
         {
-          console.log(`bu mei`)
+          console.log(`bumei`)
+          project.scripts.changeStory(`intro`, 1)
         },
       },
     ],

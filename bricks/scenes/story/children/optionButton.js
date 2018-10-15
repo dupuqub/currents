@@ -10,7 +10,8 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
     const {get, getLang} = dunp
     const lang = getLang().id
     const index = event.target.id.slice(-1)
-    const option = project.stories[lang].intro[0]().options[index]
+    const {id, chapterIndex} = project.states.safe.story
+    const option = project.stories[lang][id][chapterIndex]().options[index]
 
     get(`#optionImageRight`).style.backgroundImage = `url('${option.image}')`
     get(`#optionTextRight`).innerHTML = option.optionText
