@@ -36,12 +36,11 @@ project.bricks.lang = inner =>
     extras: [[`onclick`, dunp.trigger(click)]],
     styles:
     [
-      [`width`, `100%`],
+      [`width`, `calc(var(--u) * 250)`],
       [`height`, `calc(var(--u) * 50)`],
       [`font-size`, `calc(var(--u) * 30)`],
-      [`margin-top`, `calc(var(--h) / 2 - var(--u) * 25)`],
+      [`border-radius`, `calc(var(--u) * 10)`],
       [`transition`, `all 0.2s`],
-      [`position`, `absolute`],
     ],
     inner,
   }

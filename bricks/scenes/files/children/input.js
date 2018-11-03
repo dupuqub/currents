@@ -27,7 +27,7 @@ project.bricks.scenes.files.children.input = index =>
     project.states.safe.avatar =
     {
       name: input,
-      birth: Date(),
+      birth: new Date(),
     }
 
     project.scripts.changeStory(`intro`, 0)

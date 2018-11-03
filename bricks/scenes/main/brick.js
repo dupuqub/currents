@@ -20,7 +20,7 @@ project.bricks.scenes.main.brick = () =>
     [
       project.bricks.scenes.main.children.title(lang.title),
       project.bricks.scenes.main.children.play(lang.play, `dunp.changeScene(\`files\`)`),
-      project.bricks.lang(dunp.upper(lang.name)),
+      project.bricks.footer(),
     ],
   }
 

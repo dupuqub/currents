@@ -5,29 +5,39 @@
 
 project.stories.portuguese.intro[1] = () =>
 {
+  const {boat} = project.states.safe
   const chapter =
   {
-    title: `Are you experienced?`,
-    image: `images/wut.png?${Date.now()}`,
-    text: `These waters are treacherous and vile.<br><br>Take this package to [city name] so we can hook you up with some better paying jobs.`,
+    title: `Precisa testar o barco?`,
+    image: `images/chosen${dunp.title(boat.id)}.png?${Date.now()}`,
+    text: `As correntes são cheais de perigo.<br><br>Talvez você deva praticar com o ${boat.name} primeiro.`,
     options:
     [
       {
-        buttonText: `Sweet`,
-        optionText: `Long live life, sailor!`,
+        buttonText: `Não`,
+        optionText: `Boas viagens, aquanauta!`,
         image: `images/wut.png?${Date.now()}`,
         funktion: () =>
         {
-          console.log(`sweet`)
+          console.log(`game`)
         },
       },
       {
-        buttonText: `What?`,
-        optionText: `Don't worry about it.<br><br>You'll get the hang of it eventually`,
+        buttonText: `Por favor e obrigado`,
+        optionText: `Boa sorte!<br><br>Lembre-se sempre que errar é aprender!`,
         image: `images/wut.png?${Date.now()}`,
         funktion: () =>
         {
-          console.log(`what`)
+          console.log(`tutorial`)
+        },
+      },
+      {
+        buttonText: `Posso mudar o barco?`,
+        optionText: `Sem problemas!`,
+        image: `images/wut.png?${Date.now()}`,
+        funktion: () =>
+        {
+          project.scripts.changeStory(`intro`, 0)
         },
       },
     ],

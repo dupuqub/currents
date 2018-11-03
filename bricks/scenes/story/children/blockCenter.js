@@ -5,13 +5,14 @@
 
 project.bricks.scenes.story.children.blockCenter = story =>
 {
-  const needsWereMet = option =>
+  //....................................................................................................................
+
+  const allGood = option =>
   {
     const {typeOf, combo, run, array} = dunp
-    const {valid} = array
     const needs =
 
-        valid(option.needs)
+        array.valid(option.needs)
       ? option.needs.map(run).reduce(combo)
       : typeOf(option.needs) === `function`
       ? option.needs()
@@ -19,6 +20,8 @@ project.bricks.scenes.story.children.blockCenter = story =>
 
     return needs
   }
+
+  //....................................................................................................................
 
   const brick =
   {
@@ -33,20 +36,12 @@ project.bricks.scenes.story.children.blockCenter = story =>
     inner: () =>
     {
       const {optionButton} = project.bricks.scenes.story.children
+      const {options} = story
       const brick =
 
         dunp.array
         .new(story.options.length)
-        .map((unused, index) =>
-        {
-          const testedOption =
-
-              needsWereMet(story.options[index])
-            ? optionButton(story.options[index], index)
-            : ``
-
-          return testedOption
-        })
+        .map((unused, index) => allGood(options[index]) ? optionButton(options[index], index) : ``)
 
       return brick
     },

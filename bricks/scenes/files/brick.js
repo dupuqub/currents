@@ -18,12 +18,23 @@ project.bricks.scenes.files.brick = () =>
     ],
     inner:
     [
-      project.bricks.scenes.files.children.title(lang.files[0]),
-      project.bricks.scenes.files.children.button(0, lang.files[1]),
-      project.bricks.scenes.files.children.button(1, lang.files[1]),
-      project.bricks.scenes.files.children.button(2, lang.files[1]),
-      project.bricks.scenes.files.children.button(3, lang.files[1]),
-      project.bricks.lang(dunp.upper(lang.name)),
+      {
+        classes: [`center`],
+        styles: [[`width`, `100%`],[`height`, `24%`]],
+        inner: project.bricks.scenes.files.children.title(lang.files[0]),
+      },
+      {
+        classes: [`center`, `column`],
+        styles: [[`width`, `100%`],[`height`, `70%`]],
+        inner:
+        [
+          project.bricks.scenes.files.children.button(0, lang.files[1]),
+          project.bricks.scenes.files.children.button(1, lang.files[1]),
+          project.bricks.scenes.files.children.button(2, lang.files[1]),
+          project.bricks.scenes.files.children.button(3, lang.files[1]),
+        ],
+      },
+      project.bricks.footer(),
     ],
   }
 

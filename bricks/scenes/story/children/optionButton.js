@@ -9,22 +9,21 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
 
   const mouseOver = () =>
   {
-    const {get, getLang} = dunp
-    const lang = getLang().id
+    const lang = dunp.getLang().id
     const index = event.target.id.slice(-1)
-    const {id, chapterIndex} = project.states.safe.story
+    const {id, chapterIndex} = project.states.safe.storyAddress
     const option = project.stories[lang][id][chapterIndex]().options[index]
 
-    get(`#optionImageRight`).classList.remove(`fastFadeIn`)
-    get(`#optionTextRight`).classList.remove(`fastFadeIn`)
+    dunp.get(`#optionImageRight`).classList.remove(`fastFadeIn`)
+    dunp.get(`#optionTextRight`).classList.remove(`fastFadeIn`)
 
     const delayed = () =>
     {
-      get(`#optionImageRight`).classList.add(`fastFadeIn`)
-      get(`#optionTextRight`).classList.add(`fastFadeIn`)
+      dunp.get(`#optionImageRight`).classList.add(`fastFadeIn`)
+      dunp.get(`#optionTextRight`).classList.add(`fastFadeIn`)
 
-      get(`#optionImageRight`).style.backgroundImage = `url('${option.image}')`
-      get(`#optionTextRight`).innerHTML = option.optionText
+      dunp.get(`#optionImageRight`).style.backgroundImage = `url('${option.image}')`
+      dunp.get(`#optionTextRight`).innerHTML = option.optionText
     }
 
     setTimeout(delayed, 0)
@@ -34,11 +33,10 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
 
   const mouseOut= () =>
   {
-    const {get} = dunp
     const index = event.target.id.slice(-1)
 
-    get(`#optionImageRight`).style.backgroundImage = ``
-    get(`#optionTextRight`).innerHTML = ``
+    dunp.get(`#optionImageRight`).style.backgroundImage = ``
+    dunp.get(`#optionTextRight`).innerHTML = ``
   }
 
   //....................................................................................................................
@@ -46,8 +44,7 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
   const click = () =>
   {
     const index = event.target.id.slice(-1)
-    const story = project.states.safe.story
-    const {id, chapterIndex} = story
+    const {id, chapterIndex} = project.states.safe.storyAddress
     const lang = dunp.getLang().id
     const chapter = project.stories[lang][id][chapterIndex]()
     const option = chapter.options[index]

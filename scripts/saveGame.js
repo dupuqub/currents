@@ -5,6 +5,6 @@
 
 project.scripts.saveGame = index =>
 {
-  localStorage[`NKNWN${index}`] = JSON.stringify(project.states.safe)
+  localStorage[`currents${index}`] = JSON.stringify(project.states.safe)
 }
 

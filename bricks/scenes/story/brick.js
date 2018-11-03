@@ -5,9 +5,9 @@
 
 project.bricks.scenes.story.brick = () =>
 {
-  const lang = dunp.getLang().id
-  const {id, chapterIndex} = project.states.safe.story
-  const story = project.stories[lang][id][chapterIndex]()
+  const lang = dunp.getLang()
+  const {id, chapterIndex} = project.states.safe.storyAddress
+  const story = project.stories[lang.id][id][chapterIndex]()
   const brick =
   {
     classes: [`fastFadeIn`],
