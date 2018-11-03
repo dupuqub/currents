@@ -32,7 +32,7 @@ project.bricks.lang = inner =>
   const brick =
   {
     id: `mainLang`,
-    classes: [`center`, `pointer`, `mainButton`, `slowFadeIn`],
+    classes: [`center`, `pointer`, `mainButton`],
     extras: [[`onclick`, dunp.trigger(click)]],
     styles:
     [

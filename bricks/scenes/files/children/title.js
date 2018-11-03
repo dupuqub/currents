@@ -11,7 +11,7 @@ project.bricks.scenes.files.children.title = inner =>
   [
     [`color`, `#BBB`],
     [`font-size`, `calc(var(--u) * 120)`],
-    [`margin-bottom`, `calc(var(--u) * 100)`],
+    [`transform`, `translateY(calc(var(--u) * 40))`],
   ],
   inner,
 })

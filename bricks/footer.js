@@ -9,7 +9,7 @@ project.bricks.footer = () =>
   const brick =
   {
     id: `footer`,
-    classes: [`center`],
+    classes: [`center`, `fastFadeIn`],
     styles:
     [
       [`width`, `100%`],

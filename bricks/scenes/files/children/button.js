@@ -25,7 +25,7 @@ project.bricks.scenes.files.children.button = (index, defaultText) =>
   const brick =
   {
     id: `filesButton${index}`,
-    classes: [`center`, `pointer`, `mainButton`, `delaySlowFadeIn`],
+    classes: [`center`, `pointer`, `mainButton`, `slowFadeInDelayed`],
     extras: [[`onclick`, dunp.trigger(click)]],
     styles:
     [

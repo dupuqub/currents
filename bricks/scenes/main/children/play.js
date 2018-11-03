@@ -14,7 +14,7 @@ project.bricks.scenes.main.children.play = (inner, funktion) =>
   inner:
   {
     id: `mainPlay`,
-    classes: [`center`, `pointer`, `mainButton`, `delaySlowFadeIn`],
+    classes: [`center`, `pointer`, `mainButton`, `slowFadeInDelayed`],
     extras: [[`onclick`, funktion]],
     styles:
     [
@@ -22,7 +22,7 @@ project.bricks.scenes.main.children.play = (inner, funktion) =>
       [`height`, `30%`],
       [`transition`, `all 0.2s`],
       [`font-size`, `calc(var(--u) * 80)`],
-      [`margin-bottom`, `calc(var(--u) * 10)`],
+      [`transform`, `translateY(calc(var(--u) * -80))`],
       [`border-radius`, `calc(var(--u) * 30)`],
     ],
     inner,

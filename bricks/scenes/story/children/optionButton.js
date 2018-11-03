@@ -57,7 +57,7 @@ project.bricks.scenes.story.children.optionButton = (option, index) =>
   const brick =
   {
     id: `optionButton${index}`,
-    classes: [`center`, `pointer`, `storyOptionButton`, `delaySlowFadeIn`],
+    classes: [`center`, `pointer`, `storyOptionButton`, `slowFadeInDelayed`],
     extras:
     [
       [`onmouseover`, dunp.trigger(mouseOver)],
