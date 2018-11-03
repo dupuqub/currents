@@ -24,7 +24,7 @@ project.stories.portuguese.intro[1] = () =>
       },
       {
         buttonText: `Por favor e obrigado`,
-        optionText: `Boa sorte!<br><br>Lembre-se sempre que errar é aprender!`,
+        optionText: `Boa sorte!<br><br>Lembre-se sempre que errar é aprender.`,
         image: `images/wut.png?${Date.now()}`,
         funktion: () =>
         {
@@ -33,7 +33,7 @@ project.stories.portuguese.intro[1] = () =>
       },
       {
         buttonText: `Posso mudar o barco?`,
-        optionText: `Sem problemas!`,
+        optionText: `Sem problemas.`,
         image: `images/wut.png?${Date.now()}`,
         funktion: () =>
         {

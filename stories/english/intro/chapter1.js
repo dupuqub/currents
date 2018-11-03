@@ -24,7 +24,7 @@ project.stories.english.intro[1] = () =>
       },
       {
         buttonText: `Please and thank you`,
-        optionText: `Good luck!<br><br>Always remember that making mistakes is learning!`,
+        optionText: `Good luck!<br><br>Always remember that making mistakes is learning.`,
         image: `images/wut.png?${Date.now()}`,
         funktion: () =>
         {
@@ -33,7 +33,7 @@ project.stories.english.intro[1] = () =>
       },
       {
         buttonText: `Can I change the boat?`,
-        optionText: `No problem!`,
+        optionText: `No problem.`,
         image: `images/wut.png?${Date.now()}`,
         funktion: () =>
         {
